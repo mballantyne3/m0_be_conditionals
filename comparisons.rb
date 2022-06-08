@@ -22,24 +22,31 @@ puts "Is number_teachers greater than number_students?", number_teachers > numbe
 # this should print: "Is numberTeachers greater than numberStudents?" false
 
 # YOU DO: print the result of the comparison: is number_teachers less than number_students?
+puts "Is number_teachers less than number_students?", number_teachers < number_students
 # this should print: true
 
 # YOU DO: print the result of the comparison: is number_teachers equal to string_teachers?
+puts "Is number_teachers equal to string_teachers?", number_teachers == string_teachers
 # this should print: false
 
 # YOU DO: print the result of the comparison: is number_teachers not equal to number_students?
+puts "Is number_teachers not equal to number_students?", number_teachers != number_students
 # this should print: true
 
 # YOU DO: print the result of the comparison: is number_students greater than or equal to 20?
+puts "Is number_students greater than or equal to 20?", number_students >= 20
 # this should print: true
 
 # YOU DO: print the result of the comparison: is number_students greater than or equal to 21?
+puts "Is number_students greather than or equal to 21?", number_students >= 21
 # this should print: false
 
 # YOU DO: print the result of the comparison: is number_students less than or equal to 20?
+puts "Is number_students less than or equal to 20?", number_students <= 20
 # this should print: true
 
 # YOU DO: print the result of the comparison: is number_students less than or equal to 21?
+puts "Is number_students less than or equal to 21?", number_students <= 21
 # this should print: true
 
 
@@ -53,21 +60,21 @@ puts "Is number_teachers greater than number_students?", number_teachers > numbe
 # Make sure YOU can explain it that way!
 
 puts 4 < 9
-#YOU DO: Explain.
+#YOU DO: print the result of the comparison: 4 is less than 9
 
 books = 3
 puts 4 < books
-# YOU DO: Explain.
+# YOU DO: Assigning a variable called books to an integer of 3. Print the result of 4 being less than the number of books
 
 friends = 6
 siblings = 2
 puts friends > siblings
-# YOU DO: Explain.
+# YOU DO: Assigning a variable of friends to an integer of 6, and var siblings to an integer of 2. Print the result of comparison: is friends greater than siblings(referring to number of each)
 
 attendees = 9
 meals = 8
 puts attendees != meals
-# YOU DO: Explain.
+# YOU DO: Assigning variable attendees to integer of 9, and var meals to integer of 8. Print the result of comparison: is number of attendees not equal to number of meals
 
 
 #-------------------
@@ -79,9 +86,11 @@ finished_homework = false
 
 # EXAMPLE:
 # Determine if the user is hungry and has completed their homework
-is_hungry && finished_homework
+puts "If user is hungry and finished their homework?", is_hungry && finished_homework
+#Answer: False
 # Determine if the user is hungry or has completed their homework
-is_hungry || finished_homework
+puts "If user is hungry or has completed their homework?", is_hungry || finished_homework
+# Answer: True
 
 loves_to_play = true
 loves_dog_park = false
@@ -90,15 +99,19 @@ age = 1
 
 # YOU DO:
 # Determine if the dog loves to play and loves treats
-
+puts "IF the dog loves to play and loves treats", loves_to_play && loves_treats
+# Answer: true
 
 # Determine if the dog loves to play and loves the dog park
-
+puts "If the dog loves to play and loves the dog park", loves_to_play && loves_dog_park
+#Answer: false
 
 # Determine if the dog loves to play or loves the dog park
-
+puts "If the dog loves to play or loves the dog park?", loves_to_play || loves_dog_park
+# Answer: true
 
 # Determine if the dog loves to play and is a puppy
+puts "If the dog loves to play and is a puppy", loves_to_play && age < 1
 
 # What did your final line of code evaluate to? Why do you think that is? Explain.
-# ANSWER:
+# ANSWER: False. My final line of code inferred that an age < 1 would make it a puppy. Therefore, because the age is 1, it is not considered a puppy and it likes to play, making the comparison false.
